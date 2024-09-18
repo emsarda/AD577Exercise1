@@ -69,7 +69,7 @@ def load_translation_model(language):
         elif language == "Russian":
             return pipeline("translation_en_to_ru", model="Helsinki-NLP/opus-mt-en-ru")
         elif language == "Swedish":
-            return pipeline("translation_en_to_sw", model="Helsinki-NLP/opus-mt-en-sw")
+            return pipeline("translation_en_to_se", model="Helsinki-NLP/opus-mt-en-se")
         else:
             st.error("Unsupported language selected.")
             return None
